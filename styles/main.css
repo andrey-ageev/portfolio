@@ -37,8 +37,8 @@ blockquote, q {
     quotes: none;
 }
 
-blockquote: before, blockquote: after,
-q: before, q: after {content:'';}
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';}
 
 a {
     margin: 0;
@@ -47,3 +47,87 @@ a {
     vertical-align: baseline;
     background: transparent;
 }
+
+/********** common styles - общие стили **********/
+
+body, html {
+    padding: 0; margin: 0; height: 100%;
+}
+
+body {
+    background: #f6f6f6;
+    color: #2d2d2d;
+    font-family: 'Arial', 'Helvetica';
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 22px;}
+h3 {font-size: 20px;}
+h4, h5, h6 {font-size: 18px;}
+
+a {color: #5c5ec5;}
+a:hover {color: #1dcac1;}
+
+header, footer, main {
+    width: 100%;
+}
+
+header {
+    padding: 50px 0 30px;
+    display: flex;
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li, footer ul li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px; 
+}
+
+header ul a, footer ul a {
+    color: #0c0eb6;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+}
+
+header ul a:hover, header ul a.active, footer ul a:hover, footer ul a.active {
+    color: #0c0eb6;
+    border-bottom: 2px solid #0c0eb6;
+    transition: .2s;
+}
+
+header nav#language {
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header nav#language ul li {
+    background: #ccc9f3;
+    color: #f6f6f6;
+    padding: 4px 6px;
+    border-radius: 50%;
+    transition: .2s;
+    font-size: 10px;
+}
+
+header nav#language ul li:hover, header nav#language ul li.active {
+    border: 1px solid #0c0eb6;
+    transition: .2s;
+}
+
+header nav#language ul li a {
+    color: #0c0eb6; 
+    border-bottom: none;
+}
+
