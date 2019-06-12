@@ -174,7 +174,7 @@ footer small {
     height: 100%;
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 1250px;
+    max-width: 1200px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -184,10 +184,10 @@ footer small {
 
 .scrolltop {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 50px;
-    height: 50px;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .75);
     opacity: .7;
@@ -204,9 +204,84 @@ footer small {
     content: "⇪";
     width: 100%;
     text-align: center;
-    line-height: 45px;
+    line-height: 40px;
     position: absolute;
     top: 0;
     left: 0;
     color: #ffffff;
+}
+
+/********** preview-page - страница предпросмотра **********/
+
+.article-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 30px 0 0 0;
+}
+
+.article-holder article {
+    background: #ffffff;
+    margin: 10px 0 0 0;
+    flex-basis: calc(33% - 4px);
+}
+
+.article-holder article a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.article-holder article .details {
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #7d7d7d;
+    flex-grow: 1;
+}
+
+.article-holder article h2 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #2d2d2d;
+}
+
+.article-holder article img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: .3s
+}
+
+.article-holder article:hover img {
+    opacity: .75;
+    transition: .3s
+}
+
+.article-holder article .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.article-holder article .info .views {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    padding: 0 0 0 16px;
+}
+
+.article-holder article .info .views:after {
+    display: block;
+    position: absolute;
+    content: '☋';
+    top: 0;
+    left: 0;
 }
