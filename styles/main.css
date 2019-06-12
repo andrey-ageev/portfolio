@@ -93,7 +93,7 @@ header ul li, footer ul li {
 }
 
 header ul a, footer ul a {
-    color: #0c0eb6;
+    color: #2d2d2d;
     text-decoration: none;
     display: inline-block;
     border-bottom: 2px solid transparent;
@@ -101,8 +101,8 @@ header ul a, footer ul a {
 }
 
 header ul a:hover, header ul a.active, footer ul a:hover, footer ul a.active {
-    color: #0c0eb6;
-    border-bottom: 2px solid #0c0eb6;
+    color: #2d2d2d;
+    border-bottom: 2px solid #2d2d2d;
     transition: .2s;
 }
 
@@ -113,24 +113,30 @@ header nav#language {
 }
 
 header nav#language ul li {
-    background: #ccc9f3;
+    background: rgba(0, 0, 0, .75);
     color: #f6f6f6;
     padding: 4px 6px;
-    border-radius: 50%;
+    border-radius: 100%;
     transition: .2s;
-    font-size: 10px;
+    font-size: 12px;
+    opacity: .7;
+    cursor: pointer;
 }
 
-header nav#language ul li:hover, header nav#language ul li.active {
-    border: 1px solid #0c0eb6;
+header nav#language ul li abbr:active {
+    color: #f66707;
+}
+
+header nav#language ul li:hover  {
+    opacity: 1;
     transition: .2s;
 }
 
 header nav#language ul li a {
-    color: #0c0eb6; 
+    color: #f6f6f6; 
     border-bottom: none;
-}    
-    
+}
+   
 /********** main **********/
 
 main {
@@ -141,7 +147,7 @@ main {
 main h1, main h2, main h3, main h4 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #0c0eb6;
+    color: #2d2d2d;
     margin: 0 0 20px 0;
 }
 
