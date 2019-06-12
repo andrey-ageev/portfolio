@@ -285,3 +285,22 @@ footer small {
     top: 0;
     left: 0;
 }
+
+/********** more button - кнопка Больше **********/
+
+.more {
+    margin: 20px auto 10px;
+    background: rgba(0, 0, 0, .75);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 10px;
+    transition: .3s;
+    cursor: pointer;
+    display: table;
+    opacity: .7;
+}
+
+.more:hover {
+    opacity: 1;
+    transition: .3s;
+}
