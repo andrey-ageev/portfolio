@@ -320,3 +320,48 @@ footer small {
     opacity: 1;
     transition: .3s;
 }
+
+/********** article page - страница статьи **********/
+
+.article-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    height: 100%;
+    width: 100%;
+}
+
+.article-wrapper .details {
+    padding: 10px;
+}
+
+.article-wrapper article .details {
+    padding: 20px;
+}
+
+.article-wrapper article {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.article-wrapper article h1 {
+    margin: 30px 0;
+}
+
+.article-wrapper article .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #8d8c8c;
+}
+
+.article-wrapper article img {
+    width: 100%;
+    height: auto;
+}
