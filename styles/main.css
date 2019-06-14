@@ -55,7 +55,7 @@ body, html {
 }
 
 body {
-    background: #f6f6f6;
+    background: #a02ece;
     color: #2d2d2d;
     font-family: 'Arial', 'Helvetica';
     font-size: 16px;
@@ -362,8 +362,39 @@ footer small {
 }
 
 .article-wrapper article img {
-    width: 100%;
+    width: auto;
     height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/*********** resume page - страница резюме ***********/
+.container::after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+p {
+    padding: 15px;
+}
+
+img {
+    float: left;
+}
+
+.text1 {
+    float: left;
+    width: 300px;
+}
+
+.text2 {
+    clear: both;
+}
+
+.clear {
+    clear: both;
 }
 
 /*********** mobile styles - мобильные стили ***********/
